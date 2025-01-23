@@ -1,4 +1,4 @@
-name: Weather App
+name: Weather
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -40,6 +40,7 @@ dependencies:
   geolocator: ^13.0.2
   geocoding: ^3.0.0
   lottie: ^3.2.0
+  flutter_launcher_icons: "^0.14.2"
 
 dev_dependencies:
   flutter_test:
@@ -51,6 +52,26 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^4.0.0
+  flutter_native_splash: ^2.3.6
+  
+flutter_launcher_icons:
+  android: true
+  ios: true
+  adaptive_icon_background: "#ffffff" # Background color untuk adaptive icon
+  adaptive_icon_foreground: "assets/icons.png"
+  image_path: "assets/icons.png" # Default icon path
+  min_sdk_android: 21
+
+flutter_native_splash:
+  android: true
+  ios: true
+  android_12:
+    image: assets/icons.png # Path ke gambar splash
+    icon_background_color: "#ffffff" # Warna background
+  image: assets/icons.png
+  color: "#ffffff"
+ # android min sdk min:16, default 21
+    
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
